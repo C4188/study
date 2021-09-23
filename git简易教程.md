@@ -53,3 +53,14 @@ git reflog
 git checkout -- readme.txt
 ```
 
+> 撤销暂存区文件readme.txt, 重新放回工作区
+```{}
+git reset HEAD readme.txt
+```
+
+> 删除版本库中的文件readme.txt
+```{}
+git rm readme.txt   //删除工作区文件
+git commit -m "remove readme.txt"   //将命令提交到版本库
+```
+
